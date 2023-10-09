@@ -207,8 +207,14 @@ footer a:hover{
     color: var(--cor1);
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
     main > article > h1{
         font-size: 1.5rem;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
