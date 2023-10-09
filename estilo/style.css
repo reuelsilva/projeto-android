@@ -206,3 +206,9 @@ footer a:hover{
     text-decoration: underline;
     color: var(--cor1);
 }
+
+@media screen and (max-width: 360px) {
+    main > article > h1{
+        font-size: 1.5rem;
+    }
+}
