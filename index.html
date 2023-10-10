@@ -14,10 +14,13 @@
         <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar.</p>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Notícias</a>
-        <a href="#">Curisiosidades</a>
-        <a href="#">Fale Concosco</a>
+        <button id="btn-toggle" onclick="setMenuToggle()">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        <a href="#" class="hidden">Home</a>
+        <a href="#" class="hidden">Notícias</a>
+        <a href="#" class="hidden">Curisiosidades</a>
+        <a href="#" class="hidden">Fale Concosco</a>
     </nav>
     <main>
         <article>
@@ -117,5 +120,13 @@
     <footer>
         <p>Site criado na aula de <strong>HTML5 e CSS3</strong> do <a href="youtube.com/cursoemvideo" target="_blank">CursoemVideo</a></p>
     </footer>
+
+    <script>
+        function setMenuToggle(){
+            document.querySelectorAll('nav > a').forEach((element)=>{
+                element.classList.toggle('hidden')
+            })
+        }
+    </script>
 </body>
 </html>
