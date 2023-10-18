@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como surgiu o mascote do Android?</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/main.css">
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
@@ -13,18 +14,18 @@
         <h1>Curisiosidades de Tecnologia</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar.</p>
     </header>
-    <nav>
-        <button id="btn-toggle" onclick="setMenuToggle()">
-            <span class="material-symbols-outlined">menu</span>
+    <nav class="flex flex-col items-center sm:block">
+        <button id="btn-toggle" class="block bg-transparent border-none sm:hidden" onclick="setMenuToggle()">
+            <span class="material-symbols-outlined text-white ">menu</span>
         </button>
-        <a href="#" class="hidden">Home</a>
-        <a href="#" class="hidden">Notícias</a>
-        <a href="#" class="hidden">Curisiosidades</a>
-        <a href="#" class="hidden">Fale Concosco</a>
+        <a href="#" class="hidden sm:inline">Home</a>
+        <a href="#" class="hidden sm:inline">Notícias</a>
+        <a href="#" class="hidden sm:inline">Curisiosidades</a>
+        <a href="#" class="hidden sm:inline">Fale Concosco</a>
     </nav>
     <main>
         <article>
-            <h1>História do Mascote do Android</h1>
+            <h1 class="text-2xl sm:text-3xl">História do Mascote do Android</h1>
 
             <p>Provavelmente você sabe que o sistema operacional <strong>Android</strong>, mantido pelo <strong>Google</strong> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
 
